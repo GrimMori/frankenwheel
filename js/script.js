@@ -41,6 +41,8 @@ choose.addEventListener('click', () =>{
 
 
 
+// ----------------end game pop up--------------------
+
 endGamePopUpFunction = (array) =>{
     if(array.length=1){
         const endGamePopUpContainer = document.createElement("div");
@@ -71,7 +73,6 @@ endGamePopUpFunction = (array) =>{
     }   
 
 endGamePopUpFunction(names);}
-
 
 
 
