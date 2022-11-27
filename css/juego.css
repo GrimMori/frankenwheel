@@ -7,14 +7,13 @@ section {
     width: 100vw;
 }
 
-img, video {
+img, video, canvas {
     max-width: 95vw;
     min-width: 95%;
     object-fit: contain;
     min-height: 60vh;
     max-height: 95vh;
     margin: 1rem auto;
-
 }
 
 .button-row{ /*si esto os parece bien, podemos ponerlo en style.css*/

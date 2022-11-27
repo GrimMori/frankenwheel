@@ -1,10 +1,10 @@
-// Esto elige un nombre al azar del array 'names' y lo elimina de la lista
-//let names = ['Alba', 'Alexander', 'Arber', 'Arnau', 'Daniel', 'Denis', 'Fabio', 'Freddy', 'Gal', 'Hel', 'Joel', 'Lautaro', 'Manu', 'Nahuel', 'Ema', 'Ro', 'Rosie', 'Sablina', 'Sergi', 'Valeria', 'Victor'];
-let franken = document.querySelector("video")
-let lista = localStorage.getItem("playerlist") // lista de nombres guardada en el localStorage
+// Esto elige un nombre al azar del array 'names', lo enseña en pantalla y lo elimina de la lista
+let names = ['Alba', 'Alexander', 'Arber', 'Arnau', 'Daniel', 'Denis', 'Fabio', 'Freddy', 'Gal', 'Hel', 'Joel', 'Lautaro', 'Manu', 'Nahuel', 'Ema', 'Ro', 'Rosie', 'Sablina', 'Sergi', 'Valeria', 'Victor'];
 let choose = document.querySelector('.buttonChoose');
 let sacrificeRandom;
 let randomName;
+let franken = document.querySelector("video")
+let lista = JSON.parse(localStorage.getItem("playerlist"));
 
 choose.addEventListener('click', () =>{
     sacrificeRandom = (array) =>{
@@ -24,20 +24,17 @@ choose.addEventListener('click', () =>{
     revealSacrificeParagraph.appendChild(revealSacrificeName);
     let sevtion = document.querySelector("body");
     const area = sevtion.children[2];
-    
-    franken.play();
+
+    franken.play();    
     setTimeout(function () {
         sevtion.insertBefore(revealSacrificeDiv, area);
-    }, 1500);
-
+    }, 1000);
+    
     setTimeout(function () {
-    /* window.location.href = "sacrificio.html" */
-    sacrificeRandom();
-    }, 4000);
-    };
+    window.location.href = "sacrificio.html"
+    }, 3000);};
 
-    sacrificeRandom(JSON.parse(lista));
-})
+sacrificeRandom(lista);})
 
 
 
@@ -83,7 +80,7 @@ endGamePopUpFunction(names);}
 
 //Código para añadir un nombre a una lista    https://www.youtube.com/watch?v=vLfqrEP6weo
 
-let addedName=input.value;
+/* let addedName=input.value;
 function addNames(){
     let list = names.map(name => `<li>${name}</li>`.join(','));
     document.querySelector('.add-new-name') = list;
@@ -114,4 +111,4 @@ function deleteNames(){
             names.splice(i,1);
             i--;
             }}    
-    })};
+    })}; */
