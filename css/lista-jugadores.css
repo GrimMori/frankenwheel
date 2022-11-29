@@ -36,7 +36,7 @@ body > section > div > p{
     background-color: var(--colortwo);
     border: 3px solid var(--colorthree);
     padding: 0 1rem 0 1rem;
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
