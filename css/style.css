@@ -49,9 +49,11 @@ h2 {
     display: grid;
     /*grid-gap: 10px;*/
     text-align: center;
-    grid-template-areas: "img ti ti ti"
+    grid-template-areas: 
+        "img ti ti ti"
         "img play play play"
-        ". deat . inst ";
+        ". deat . inst "
+        ". warning warning warning";
     align-items: center;
     justify-items: stretch;
     justify-content: center;
@@ -100,6 +102,11 @@ h1 {
     grid-area: play;
 }
 
+.container > p{
+    color: var(--colorfive);
+    grid-area: warning;
+}
+
 /*se crean nuevos nombres con clase en botones*/
 .button-deat {
     margin: 1rem auto;
@@ -137,7 +144,8 @@ h1 {
             "img img img img "
             ". play play ."
             ". . deat ."
-            ". . inst . ";
+            ". . inst . "
+            "warning warning warning warning";
         justify-items: center;
     }
 }
