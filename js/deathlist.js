@@ -12,7 +12,7 @@ const area = content.children[0];
 const end = content.children[content.length];
 
 // player list
-let names = ['Alba', 'Alexander', 'Arber', 'Arnau', 'Daniel', 'Denis', 'Fabio', 'Freddy', 'Gal', 'Hel', 'Joel', 'Lautaro', 'Manu', 'Nahuel', 'Ema', 'Ro', 'Rosie', 'Sablina', 'Sergi', 'Valeria', 'Victor'];
+let names = ["Player 1", "Player 2", "Player 3"];
 let namelist = localStorage.getItem("playerlist");
 let parsedlist = JSON.parse(namelist);
 let lista = new Array;
