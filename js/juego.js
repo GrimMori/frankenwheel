@@ -4,7 +4,7 @@ let sacrificeRandom;
 let randomName;
 let franken = document.querySelector("video")
 let lista = JSON.parse(localStorage.getItem("playerlist"));
-let names = ['Alba', 'Alexander', 'Arber', 'Arnau', 'Daniel', 'Denis', 'Fabio', 'Freddy', 'Gal', 'Hel', 'Joel', 'Lautaro', 'Manu', 'Nahuel', 'Ema', 'Ro', 'Rosie', 'Sablina', 'Sergi', 'Valeria', 'Victor'];
+let names = ["Player 1", "Player 2", "Player 3"];
 
 let cemetery = localStorage.getItem("cemetery");
 let parsedcemetery = JSON.parse(cemetery);
