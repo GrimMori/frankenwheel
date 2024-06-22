@@ -119,7 +119,7 @@ h1 {
     grid-area: deat;
 }
 
-.button-inst{
+.button-inst {
     margin: 1rem auto;
     padding: 0.5rem 3rem;
     font-size: 1.25rem;
@@ -127,9 +127,8 @@ h1 {
     color: var(--colorone);
     background-color: var(--colortwo);
     border: 3px solid var(--colorthree);
-   grid-area: inst;
+    grid-area: inst;
 }
-
 
 /* se crean media para version movil y desktop*/
 @media (max-width: 750px) {
